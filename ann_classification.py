@@ -14,7 +14,8 @@ class Config:
 
 def generate_data():
     np.random.seed(0)
-    X, y = datasets.make_moons(200, noise=0.20)
+#   X, y = datasets.make_moons(200, noise=0.20)
+    X, y = datasets.make_circles(200, noise=0.20, factor=0.3)
     return X, y
 
 
